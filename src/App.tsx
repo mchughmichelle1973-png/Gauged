@@ -5,10 +5,12 @@
 
 import React, { useEffect, useState } from 'react';
 import { Header } from './components/Header';
+import { OwnerMessages } from './components/OwnerMessages';
 import { ExecutiveSummary } from './components/ExecutiveSummary';
 import { RainfallTable } from './components/RainfallTable';
 import { ClimateNormalsChart } from './components/ClimateNormalsChart';
 import { ActiveAlerts } from './components/ActiveAlerts';
+import { Changelog } from './components/Changelog';
 import { StationDetailModal } from './components/StationDetailModal';
 import { Footer } from './components/Footer';
 import { fetchRainfallSummary, RainfallResponse } from './services/rainfallService';
@@ -103,6 +105,13 @@ export default function App() {
           </div>
         ) : data ? (
           <>
+            {/* Dedicated View: Messages from the owner (accessible only from the top bar) */}
+            {activeSection === 'messages' && (
+              <section id="owner-messages-section">
+                <OwnerMessages />
+              </section>
+            )}
+
             {/* Overview / Executive Summary Section */}
             {(activeSection === 'overview' || activeSection === 'totals') && (
               <section id="summary-section">
@@ -140,6 +149,13 @@ export default function App() {
             {(activeSection === 'overview' || activeSection === 'alerts') && (
               <section id="alerts-section">
                 <ActiveAlerts alerts={data.alerts} />
+              </section>
+            )}
+
+            {/* Changelog Section */}
+            {(activeSection === 'overview' || activeSection === 'changelog') && (
+              <section id="changelog-section">
+                <Changelog />
               </section>
             )}
           </>

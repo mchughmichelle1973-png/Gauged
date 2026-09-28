@@ -33,7 +33,7 @@ export const Header: React.FC<HeaderProps> = ({
           </span>
         </a>
         <span className="text-[11px] font-mono font-medium text-emerald-400/90 bg-emerald-950/60 border border-emerald-800/50 px-2 py-0.5 rounded tracking-wide select-none">
-          Version 1.00a
+          Version 1.01a
         </span>
       </div>
 
@@ -78,6 +78,26 @@ export const Header: React.FC<HeaderProps> = ({
           }`}
         >
           Flood Advisories
+        </button>
+        <button
+          onClick={() => setActiveSection('changelog')}
+          className={`hover:text-slate-100 transition-colors pb-1 border-b-2 whitespace-nowrap ${
+            activeSection === 'changelog'
+              ? 'border-emerald-400 text-emerald-300 font-bold'
+              : 'border-transparent'
+          }`}
+        >
+          Changelog
+        </button>
+        <button
+          onClick={() => setActiveSection('messages')}
+          className={`hover:text-slate-100 transition-colors pb-1 border-b-2 whitespace-nowrap ${
+            activeSection === 'messages'
+              ? 'border-emerald-400 text-emerald-300 font-bold'
+              : 'border-transparent'
+          }`}
+        >
+          Messages from the owner
         </button>
       </nav>
 
