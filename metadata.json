@@ -1,0 +1,6 @@
+{
+  "name": "Illinois Precipitation Monitor - NWS Hydro & Rainfall Network",
+  "description": "Live and accurate Illinois rainfall totals, climatological reports, radar observations, and flood warnings powered directly by the National Weather Service (NWS) API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
