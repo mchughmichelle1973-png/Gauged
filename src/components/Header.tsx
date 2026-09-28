@@ -17,20 +17,25 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between px-6 py-3.5 bg-[#020d08]/85 backdrop-blur-md border-b border-emerald-950/70">
-      {/* Zone 1: Single text element wordmark in display face */}
-      <a
-        href="#"
-        onClick={(e) => {
-          e.preventDefault();
-          setActiveSection('overview');
-        }}
-        className="flex items-center gap-2.5 text-slate-100 hover:text-emerald-400 transition-colors"
-      >
-        <CloudRain className="w-5 h-5 text-emerald-400 shrink-0" />
-        <span className="text-lg font-extrabold tracking-tight text-white whitespace-nowrap">
-          Gauged<span className="text-emerald-400">.</span>
+      {/* Zone 1: Single text element wordmark in display face + Version badge */}
+      <div className="flex items-center gap-2.5">
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            setActiveSection('overview');
+          }}
+          className="flex items-center gap-2.5 text-slate-100 hover:text-emerald-400 transition-colors"
+        >
+          <CloudRain className="w-5 h-5 text-emerald-400 shrink-0" />
+          <span className="text-lg font-extrabold tracking-tight text-white whitespace-nowrap">
+            Gauged<span className="text-emerald-400">.</span>
+          </span>
+        </a>
+        <span className="text-[11px] font-mono font-medium text-emerald-400/90 bg-emerald-950/60 border border-emerald-800/50 px-2 py-0.5 rounded tracking-wide select-none">
+          Version 1.00a
         </span>
-      </a>
+      </div>
 
       {/* Zone 2: 4-6 clean text navigation links */}
       <nav className="hidden lg:flex items-center gap-6 text-xs uppercase tracking-wider font-semibold text-slate-400">
