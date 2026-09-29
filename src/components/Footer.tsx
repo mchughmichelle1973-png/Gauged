@@ -63,6 +63,18 @@ export const Footer: React.FC = () => {
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>
+            <span aria-hidden="true" className="text-slate-600 hidden sm:inline">·</span>
+            <div>
+              <a
+                href="https://forms.gle/vQ9VbNsBMKTq18qD8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-400 hover:text-emerald-300 font-semibold underline underline-offset-2 transition-colors inline-flex items-center gap-1"
+              >
+                <span>Make A Suggestion!</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-4 shrink-0">

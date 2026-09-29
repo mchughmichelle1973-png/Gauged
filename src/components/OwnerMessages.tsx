@@ -13,13 +13,31 @@ export interface OwnerMessage {
 
 const OWNER_MESSAGES: OwnerMessage[] = [
   {
+    id: 'msg-3',
+    message: "Hurricane Polo will cause between 2-4 inches of rain across the Northern Illinois basin, and at least 0.3-2 inches across the Central Illinois basin. Move to higher ground if a flash flood warning is issued for your area.",
+    author: 'Owner',
+    authorTitle: 'Network Lead & Meteorologist',
+    timestamp: '10:20 PM CST (USA)',
+    date: '9/28/2026',
+    isLatest: true,
+  },
+  {
+    id: 'msg-2',
+    message: "Monitoring rainfall over the next few days, I expect at least a few FFW's to be issued.",
+    author: 'Owner',
+    authorTitle: 'Network Lead & Meteorologist',
+    timestamp: '6:57 PM CST (USA)',
+    date: '9/28/2026',
+    isLatest: false,
+  },
+  {
     id: 'msg-1',
     message: 'I think we might get some rain soon.',
     author: 'Owner',
     authorTitle: 'Network Lead & Meteorologist',
-    timestamp: '3:36 PM',
+    timestamp: '3:36 PM CST (USA)',
     date: '9/28/2026',
-    isLatest: true,
+    isLatest: false,
   },
 ];
 
@@ -35,12 +53,12 @@ export const OwnerMessages: React.FC = () => {
         <div className="flex items-center gap-2">
           <MessageSquare className="w-4 h-4 text-emerald-400" />
           <h2 className="text-xs uppercase font-mono font-bold tracking-wider text-slate-300">
-            Messages from the owner
+            Live Messages
           </h2>
         </div>
         <div className="flex items-center gap-2 text-[11px] font-mono text-emerald-400">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>Official Dispatch</span>
+          <span>Official Dispatch · Central Standard Time (USA)</span>
         </div>
       </div>
 

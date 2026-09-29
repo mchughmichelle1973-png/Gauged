@@ -33,7 +33,7 @@ export const Header: React.FC<HeaderProps> = ({
           </span>
         </a>
         <span className="text-[11px] font-mono font-medium text-emerald-400/90 bg-emerald-950/60 border border-emerald-800/50 px-2 py-0.5 rounded tracking-wide select-none">
-          Version 1.01a
+          Version 1.01b
         </span>
       </div>
 
@@ -97,7 +97,7 @@ export const Header: React.FC<HeaderProps> = ({
               : 'border-transparent'
           }`}
         >
-          Messages from the owner
+          Live Messages
         </button>
       </nav>
 

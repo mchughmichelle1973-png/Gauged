@@ -14,9 +14,31 @@ export interface ChangelogRelease {
 
 const RELEASES: ChangelogRelease[] = [
   {
+    version: '1.01b',
+    date: 'September 29, 2026',
+    isLatest: true,
+    title: 'Live Messages Renaming & Version 1.01b Update',
+    changes: [
+      {
+        category: 'Features',
+        items: [
+          'Renamed the owner broadcasts station to "Live Messages" across navigation and section headers.',
+          'Maintained direct top bar quick-access navigation next to the Changelog section.',
+        ],
+      },
+      {
+        category: 'Improvements',
+        items: [
+          'Upgraded system version tag to Version 1.01b in navigation bar and telemetry manifests.',
+          'Standardized CST (USA) time-zone designations across all real-time dispatches.',
+        ],
+      },
+    ],
+  },
+  {
     version: '1.01a',
     date: 'September 28, 2026',
-    isLatest: true,
+    isLatest: false,
     title: 'Owner Dispatch Station, Version 1.01a & Extended Community Integrations',
     changes: [
       {
@@ -85,7 +107,7 @@ export const Changelog: React.FC = () => {
         </div>
         <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-800/40 px-3 py-1.5 rounded-lg">
           <Tag className="w-3.5 h-3.5" />
-          <span>Current Build: Version 1.01a</span>
+          <span>Current Build: Version 1.01b</span>
         </div>
       </div>
 
