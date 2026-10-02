@@ -13,13 +13,22 @@ export interface OwnerMessage {
 
 const OWNER_MESSAGES: OwnerMessage[] = [
   {
+    id: 'msg-4',
+    message: 'Not expecting any/that much rain soon.',
+    author: 'Owner',
+    authorTitle: 'Network Lead & Meteorologist',
+    timestamp: '7:30 AM CST (USA)',
+    date: '10/2/2026',
+    isLatest: true,
+  },
+  {
     id: 'msg-3',
     message: "Hurricane Polo will cause between 2-4 inches of rain across the Northern Illinois basin, and at least 0.3-2 inches across the Central Illinois basin. Move to higher ground if a flash flood warning is issued for your area.",
     author: 'Owner',
     authorTitle: 'Network Lead & Meteorologist',
     timestamp: '10:20 PM CST (USA)',
     date: '9/28/2026',
-    isLatest: true,
+    isLatest: false,
   },
   {
     id: 'msg-2',
