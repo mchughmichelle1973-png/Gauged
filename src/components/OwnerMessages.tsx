@@ -13,13 +13,22 @@ export interface OwnerMessage {
 
 const OWNER_MESSAGES: OwnerMessage[] = [
   {
+    id: 'msg-5',
+    message: "Portions of Illinois is now in a tropical cyclone's cone. This message will be updated today or tomorrow afternoon with more details.",
+    author: 'Owner',
+    authorTitle: 'Network Lead & Meteorologist',
+    timestamp: '4:04 PM CST (USA)',
+    date: '10/6/2026',
+    isLatest: true,
+  },
+  {
     id: 'msg-4',
     message: 'Not expecting any/that much rain soon.',
     author: 'Owner',
     authorTitle: 'Network Lead & Meteorologist',
     timestamp: '7:30 AM CST (USA)',
     date: '10/2/2026',
-    isLatest: true,
+    isLatest: false,
   },
   {
     id: 'msg-3',
