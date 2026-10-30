@@ -13,13 +13,22 @@ export interface OwnerMessage {
 
 const OWNER_MESSAGES: OwnerMessage[] = [
   {
+    id: 'msg-7',
+    message: "Rain looks like it's light right now, as rain has not been as common now. Happy Halloween!",
+    author: 'Owner',
+    authorTitle: 'Network Lead & Meteorologist',
+    timestamp: '4:15 PM CST (USA)',
+    date: '10/30/2026',
+    isLatest: true,
+  },
+  {
     id: 'msg-6',
     message: 'Just what I expected, no rain from Isaias.',
     author: 'Owner',
     authorTitle: 'Network Lead & Meteorologist',
     timestamp: '9:15 PM CST (USA)',
     date: '10/10/2026',
-    isLatest: true,
+    isLatest: false,
   },
   {
     id: 'msg-5',
